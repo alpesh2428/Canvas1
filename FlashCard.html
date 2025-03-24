@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADDIE Flashcards - Click to Flip</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .card-container {
+      perspective: 1000px;
+      width: 250px;
+      height: 160px;
+      margin: 16px; /* Add spacing all around each card */
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      backface-visibility: hidden;
+      text-align: center;
+    }
+
+    .front {
+      background-color: #ffffff;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .back {
+      background-color: #3498db;
+      color: white;
+      transform: rotateY(180deg);
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ADDIE Model Flashcards</h1>
+
+  <div class="card-container">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-face front">Analysis Phase</div>
+      <div class="card-face back">
+        Identify goals, learner traits, constraints, delivery methods, and project timeline.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-face front">Design Phase</div>
+      <div class="card-face back">
+        Blueprint learning structure, assessments, and visuals. Includes strategy and prototypes.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-face front">Development Phase</div>
+      <div class="card-face back">
+        Create actual materials, test them, and revise based on feedback to enhance engagement.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-face front">Implementation Phase</div>
+      <div class="card-face back">
+        Train facilitators, deploy the course, and verify functionality and readiness for use.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-face front">Evaluation Phase</div>
+      <div class="card-face back">
+        Measure success using reactions and learning assessments; identify performance gaps.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
