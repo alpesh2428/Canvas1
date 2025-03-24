@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FSLMR Flashcards</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      width: 280px;
+      height: 160px;
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .card-front {
+      background-color: #f0f8ff;
+    }
+    .card-back {
+      background-color: #e6f7ff;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is the purpose of the FSLMR Statute?</div>
+    <div class="card-back">To define federal employee labor rights and promote effective labor-management relations.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What rights do employees have under §7102?</div>
+    <div class="card-back">To join or refrain from labor organizations and engage in collective bargaining.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">Who is excluded from the definition of "employee" under §7103?</div>
+    <div class="card-back">Supervisors, management officials, uniformed services, strikers, and others.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is the FLRA?</div>
+    <div class="card-back">Federal Labor Relations Authority – oversees federal labor-management relations.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is a "grievance" under the statute?</div>
+    <div class="card-back">Any complaint by an employee, union, or agency over employment-related matters.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">Key management rights under §7106?</div>
+    <div class="card-back">Hire, assign, direct, discipline, lay off employees, and manage agency operations.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is an "unfair labor practice" for agencies?</div>
+    <div class="card-back">Actions like coercing employees or refusing to bargain in good faith (§7116).</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is the role of the Federal Service Impasses Panel?</div>
+    <div class="card-back">Resolves negotiation impasses between agencies and unions (§7119).</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">When does a labor org get exclusive recognition?</div>
+    <div class="card-back">After being elected by majority vote in a secret ballot (§7111).</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">What is required for dues deduction?</div>
+    <div class="card-back">A signed employee authorization; valid for 1 year (§7115).</div>
+  </div>
+</div>
+
+</body>
+</html>
